@@ -27,6 +27,7 @@ namespace HotelListing.Controllers
         public IEnumerable<WeatherForecast> Get()
         {
             _logger.LogInformation("Accessed Weather forecast");
+
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
